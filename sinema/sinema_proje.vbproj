@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5632F0F3-46AC-4A31-93F3-1D69FC19EF6F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>sinema_proje.My.MyApplication</StartupObject>
+    <RootNamespace>sinema_proje</RootNamespace>
+    <AssemblyName>sinema_proje</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>sinema_proje.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>sinema_proje.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Film_class.vb" />
+    <Compile Include="frm_filmara.Designer.vb">
+      <DependentUpon>frm_filmara.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_filmara.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_sifremiUnuttum.Designer.vb">
+      <DependentUpon>frm_sifremiUnuttum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_sifremiUnuttum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_iletisim.Designer.vb">
+      <DependentUpon>frm_iletisim.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_iletisim.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_yonetici.Designer.vb">
+      <DependentUpon>frm_yonetici.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_yonetici.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tema.Designer.vb">
+      <DependentUpon>frm_tema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kategori.Designer.vb">
+      <DependentUpon>frm_kategori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_kategori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kullanicigirisi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kullanicigirisi.Designer.vb">
+      <DependentUpon>frm_kullanicigirisi.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kayit.Designer.vb">
+      <DependentUpon>frm_kayit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_kayit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanıcı.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="veritabanı.vb" />
+    <Compile Include="Yöneticiİşlemleri.Designer.vb">
+      <DependentUpon>Yöneticiİşlemleri.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yöneticiİşlemleri.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_filmara.resx">
+      <DependentUpon>frm_filmara.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_sifremiUnuttum.resx">
+      <DependentUpon>frm_sifremiUnuttum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_iletisim.resx">
+      <DependentUpon>frm_iletisim.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_yonetici.resx">
+      <DependentUpon>frm_yonetici.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tema.resx">
+      <DependentUpon>frm_tema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kategori.resx">
+      <DependentUpon>frm_kategori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kullanicigirisi.resx">
+      <DependentUpon>frm_kullanicigirisi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kayit.resx">
+      <DependentUpon>frm_kayit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yöneticiİşlemleri.resx">
+      <DependentUpon>Yöneticiİşlemleri.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giris_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_kayit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_giris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_devam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_devam1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kayit_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\afis_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\afis_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\afis_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_ozel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_ara3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tema_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tema_sifreunuttum4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\şifreolustur_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iletisim_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iletisim_bg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profil_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yönetici_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_güncelle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_sil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\göster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GÜNCELLE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SİL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yonetici_islemleri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KULLANICIİSLEMLERİ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LİSTELE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yöneticiSayfası.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yöneticiSayfasıSon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filmara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARAFİLMARA.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
